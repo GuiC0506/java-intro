@@ -7,7 +7,8 @@ public class Main {
         Main.test("Test message");
         // FScanner.Start();
         // Arrays.Start();
-        FStrings.Start();
+        // FStrings.Start();
+        WrapperClasses.Start();
     }
 
     public static void test(String message) {
