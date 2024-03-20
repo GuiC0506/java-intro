@@ -1,6 +1,6 @@
 package app;
 
-public class Arrays {
+public class FArrays {
     public static void Start() {
         int[] numbers = new int[10];
         numbers[0] = 15;

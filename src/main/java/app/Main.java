@@ -6,9 +6,10 @@ public class Main {
         System.out.println("Hello world!!");
         Main.test("Test message");
         // FScanner.Start();
-        // Arrays.Start();
+        // FArrays.Start();
         // FStrings.Start();
-        WrapperClasses.Start();
+        // WrapperClasses.Start();
+        FArrayList.Start();
     }
 
     public static void test(String message) {
