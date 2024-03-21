@@ -10,6 +10,8 @@ public class Main {
         ArrayList<Fear> fears = new ArrayList<>();
         fears.add(new Fear("light", 1));
         fears.add(new Fear("frog", 3));
+        fears.add(new Phobia("randomphobia", 1));
+        // subclasses instances can be part of super class data structures
         fear.feel();
         phobia.feel();
 
@@ -18,6 +20,8 @@ public class Main {
         final int fearsCreated = Fear.getFearsCreated();
         System.out.println("=======\n");
         System.out.println(fearsCreated);
+
+        AbstractionImplementation abstraction = new AbstractionImplementation();
     }
 
     public static void test(String message) {

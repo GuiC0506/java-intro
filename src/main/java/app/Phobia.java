@@ -6,9 +6,8 @@ public class Phobia extends Fear {
         super(name, level);
     };
     
-
+    @Override
     public void feel() {
-        // super.feel();
         System.out.printf("Feeling phobia %s \n", this.getName());
     }
-};
+}
