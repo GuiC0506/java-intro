@@ -4,7 +4,7 @@ import java.util.*;
 public class FArrayList {
     public static void Start() {
         ArrayList<String> list = new ArrayList<>(
-            Arrays.asList("test")
+            Arrays.asList("teste1", "teste2")
         );
         // they store reference data type
         list.add("churros");

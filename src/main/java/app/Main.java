@@ -1,15 +1,20 @@
 package app;
-import PScanner.FScanner;
+
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!!");
-        Main.test("Test message");
-        // FScanner.Start();
-        // FArrays.Start();
-        // FStrings.Start();
-        // WrapperClasses.Start();
-        FArrayList.Start();
+        FPrintf.Start();
+        Fear fear = new Fear("dark", 4);
+        ArrayList<Fear> fears = new ArrayList<>();
+        fears.add(new Fear("light", 1));
+        fears.add(new Fear("frog", 3));
+        fear.feel();
+        
+        fears.get(0).feel();
+        final int fearsCreated = Fear.getFearsCreated();
+        System.out.println("=======\n");
+        System.out.println(fearsCreated);
     }
 
     public static void test(String message) {
