@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+/home/guichina/dev/Java/java-intro/workspace/.metadata/.plugins/org.eclipse.jdt.core
-3672224818.index
-3842426239.index
-1865797976.index
