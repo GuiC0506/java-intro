@@ -17,11 +17,12 @@ public class Main {
 
 
         fears.get(0).feel();
-        final int fearsCreated = Fear.getFearsCreated();
         System.out.println("=======\n");
-        System.out.println(fearsCreated);
 
         AbstractionImplementation abstraction = new AbstractionImplementation();
+        Rabbit rabbit = new Rabbit();
+        rabbit.flee();
+        System.out.println(fear.getLevel());
     }
 
     public static void test(String message) {

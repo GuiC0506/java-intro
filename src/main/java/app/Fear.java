@@ -9,13 +9,22 @@ public class Fear { private String name;
         Fear.fearsCreated++;
     };
 
-    public void feel() {
+    public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getLevel() {
+		return level;
+	}
+
+	public void setLevel(int level) {
+		this.level = level;
+	}
+
+
+	public void feel() {
         System.out.printf("Feeling %s\n", this.name);
     };
-
-    public static int getFearsCreated() {
-        return Fear.fearsCreated;
-    }
     
     @Override
     public String toString() {
