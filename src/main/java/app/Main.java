@@ -1,5 +1,6 @@
 package app;
 
+import java.awt.print.Printable;
 import java.util.ArrayList;
 
 public class Main {
@@ -24,10 +25,22 @@ public class Main {
         rabbit.flee();
         System.out.println(fear.getLevel());
         
-        Exceptions.Start();
-    }
+        // Exceptions.Start();
+        Cat cat = new Cat();
+        cat.print();
+        // since Cat class implements the "IPrintable" interface, it can be passed as a parameter
+        printThing(cat);
+        // lambdas work with parameters typed by an interface
+            // avoiding the work of implement that interface in a particular class, then define
+            // a specific method, and than call it in another method
+            printThing(() -> { System.out.println("Meow"); });
+        }
 
-    public static void test(String message) {
-        System.out.println(message);
+        public static void test(String message) {
+            System.out.println(message);
+        }
+
+        public static void printThing(IPrintable thing) {
+            thing.print();
+        }
     }
-}

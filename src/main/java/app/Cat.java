@@ -8,6 +8,6 @@ public class Cat implements IPrintable {
 
 	@Override
 	public void print() {
-            System.out.println("Meow");
+        System.out.println("Meow");
 	}
 }
