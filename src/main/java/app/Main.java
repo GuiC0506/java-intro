@@ -31,9 +31,12 @@ public class Main {
         // since Cat class implements the "IPrintable" interface, it can be passed as a parameter
         printThing(cat);
         // lambdas work with parameters typed by an interface
-            // avoiding the work of implement that interface in a particular class, then define
-            // a specific method, and than call it in another method
-            printThing(() -> { System.out.println("Meow"); });
+        // instead of passing an object that contains an implementation of a specific method
+        // defined inside an interface, it can be passed a lambda expression that does that
+        // action.
+        printThing(() ->  System.out.println("Meow"));
+
+        IPrintable lambdaPrintable = () -> System.out.println("Meow");
         }
 
         public static void test(String message) {
