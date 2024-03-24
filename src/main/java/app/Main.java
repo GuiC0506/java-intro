@@ -37,7 +37,6 @@ public class Main {
         printThing(suffix ->  System.out.println("Meow"));
 
         IPrintable lambdaPrintable = (suffix) -> System.out.println(suffix);
-        printThing(lambdaPrintable("Meow"));
         }
 
         public static void test(String message) {
