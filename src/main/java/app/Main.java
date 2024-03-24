@@ -23,6 +23,8 @@ public class Main {
         Rabbit rabbit = new Rabbit();
         rabbit.flee();
         System.out.println(fear.getLevel());
+        
+        Exceptions.Start();
     }
 
     public static void test(String message) {
