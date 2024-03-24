@@ -7,15 +7,15 @@ public class Cat implements IPrintable {
     public Cat() {}
 
 	@Override
-	public void print() {
-        System.out.println("Meow");
+        public void print(String suffix) {
+        System.out.println(suffix);
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(final String name) {
 		this.name = name;
 	}
 
@@ -23,7 +23,7 @@ public class Cat implements IPrintable {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge(final int age) {
 		this.age = age;
 	}
 }
