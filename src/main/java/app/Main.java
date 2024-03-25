@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-
         @SuppressWarnings("unused")
         String name = "churros";
 
@@ -30,7 +29,12 @@ public class Main {
         
         // Exceptions.Start();
         // Lambdas.Start();
-        Records.Start();
+        // Records.Start();
+        try {
+            FAnnotations.Start();
+        } catch(Exception e) {
+            System.out.println(e.getCause());
+        }
     }
 
     public static void test(String message) {
