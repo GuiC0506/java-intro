@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+
+        @SuppressWarnings("unused")
+        String name = "churros";
+
+
         FPrintf.Start();
         Fear fear = new Fear("dark", 4);
         Phobia phobia = new Phobia("tassalophobia", 3);
@@ -25,12 +30,7 @@ public class Main {
         
         // Exceptions.Start();
         // Lambdas.Start();
-        EmployeeClass employee = new EmployeeClass("Churros", 3);
-        EmployeeRecord employeeRecord = new EmployeeRecord("Churros", 6);
-        System.out.println(employeeRecord.name());
-        System.out.println(employeeRecord);
-        System.out.println(employeeRecord.nameInUpperCase());
-        EmployeeRecord.anything();
+        Records.Start();
     }
 
     public static void test(String message) {
