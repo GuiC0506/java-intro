@@ -1,6 +1,5 @@
 package app;
 
-import java.awt.print.Printable;
 import java.util.ArrayList;
 
 public class Main {
@@ -12,8 +11,7 @@ public class Main {
         fears.add(new Fear("light", 1));
         fears.add(new Fear("frog", 3));
         fears.add(new Phobia("randomphobia", 1));
-        // subclasses instances can be part of super class data structures
-        fear.feel();
+        // subclasses instances can be part of super class data structures fear.feel();
         phobia.feel();
 
 
@@ -26,7 +24,13 @@ public class Main {
         System.out.println(fear.getLevel());
         
         // Exceptions.Start();
-        Lambdas.Start();
+        // Lambdas.Start();
+        EmployeeClass employee = new EmployeeClass("Churros", 3);
+        EmployeeRecord employeeRecord = new EmployeeRecord("Churros", 6);
+        System.out.println(employeeRecord.name());
+        System.out.println(employeeRecord);
+        System.out.println(employeeRecord.nameInUpperCase());
+        EmployeeRecord.anything();
     }
 
     public static void test(String message) {

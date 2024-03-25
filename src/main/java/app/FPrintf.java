@@ -3,7 +3,7 @@ package app;
 public class FPrintf {
     public static void Start() {
         final String name = "churros";
-        System.out.println("Hello world!!");
+        System.out.printf("Hello world!!");
         System.out.printf("My dog %-10s", "churros\n");
         System.out.printf("My dog %d \n", 19);
         System.out.printf("My dog %b \n", true);
