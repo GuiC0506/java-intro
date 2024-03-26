@@ -23,5 +23,17 @@ public class FArrayList {
 
         list.clear();
         System.out.println(list.size());
+
+        Fear fear = new Fear("dark", 4);
+        Phobia phobia = new Phobia("tassalophobia", 3);
+        ArrayList<Fear> fears = new ArrayList<>();
+        fears.add(new Fear("light", 1));
+        fears.add(new Fear("frog", 3));
+        fears.add(new Phobia("randomphobia", 1));
+
+        phobia.feel();
+
+
+        fears.get(0).feel();
     }
 }

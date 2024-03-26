@@ -22,7 +22,8 @@ public class Fear {
     }
 
     public String getName() { return this.name; }
-
+    
+    // I'm really not good thinking on creative method names
     public void stickInYourAss() {
         String sentence = String.format("Sticking fear in your ass");
         System.out.println(sentence);
