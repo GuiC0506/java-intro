@@ -26,7 +26,6 @@ public class Main {
         AbstractionImplementation abstraction = new AbstractionImplementation();
         Rabbit rabbit = new Rabbit();
         rabbit.flee();
-        System.out.println(fear.getLevel());
         
         // Exceptions.Start();
         // Lambdas.Start();
@@ -50,7 +49,8 @@ public class Main {
             }
         }
 
-        Enumerations.Start();
+        // Enumerations.Start();
+        Reflection.Start();
     }
 
     public static void test(String message) {
