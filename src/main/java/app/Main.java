@@ -11,7 +11,11 @@ public class Main {
         // Records.Start();
         // FAnnotations.Start();
         // Enumerations.Start();
-        Reflection.Start();
+        try {
+            RestCalls.start();
+        } catch(Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public static void test(String message) {
