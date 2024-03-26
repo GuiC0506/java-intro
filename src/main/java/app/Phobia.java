@@ -6,12 +6,12 @@ public class Phobia extends Fear {
     };
     
     @Override
-    @VeryImportant
+    @VeryImportant(times = 3)
     public void feel() {
         System.out.printf("Feeling phobia %s \n", this.getName());
     }
     
-    @VeryImportant
+    @VeryImportant(times = 5)
     public void notFeel() {
         System.out.printf("Not Feeling phobia %s \n", this.getName());
     }

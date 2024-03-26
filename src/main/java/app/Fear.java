@@ -1,5 +1,8 @@
 package app;
-public class Fear { private String name;
+public class Fear {
+
+    @FieldAnnotation
+    public String name;
     private int level = 0;
     static int fearsCreated = 0;
 

@@ -12,7 +12,10 @@ public class FAnnotations {
         Phobia phobia = new Phobia("tassalophobia", 3);
         for(Method method : phobia.getClass().getDeclaredMethods()) {
             if(method.isAnnotationPresent(VeryImportant.class)) {
-                method.invoke(phobia);
+                VeryImportant annotation = method.getAnnotation(VeryImportant.class);
+                for(int i=0; i <= annotation.times(); ++i) {
+                    method.invoke(phobia);
+                }
             }
         }
     }

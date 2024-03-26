@@ -1,5 +1,6 @@
 package app;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 public class Main {
@@ -35,6 +36,21 @@ public class Main {
         } catch(Exception e) {
             System.out.println(e.getCause());
         }
+        
+        for(Field field : fear.getClass().getDeclaredFields()) {
+            if(field.isAnnotationPresent(FieldAnnotation.class)) {
+                try {
+                    Object value = field.get(fear);
+                    if(value instanceof String valueToString) {
+                        System.out.println(valueToString.toUpperCase());
+                    }
+                } catch(IllegalAccessException e) {
+                    System.out.println(e.getCause());
+                }
+            }
+        }
+
+        Enumerations.Start();
     }
 
     public static void test(String message) {
