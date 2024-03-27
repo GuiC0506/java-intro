@@ -1,6 +1,6 @@
 package app;
 
-public class Cat implements IPrintable {
+public class Cat implements IPrintable, IPrey {
     public String name;
     public int age;
 
@@ -26,4 +26,10 @@ public class Cat implements IPrintable {
 	public void setAge(final int age) {
 		this.age = age;
 	}
+
+    @Override
+    public void flee() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'flee'");
+    }
 }

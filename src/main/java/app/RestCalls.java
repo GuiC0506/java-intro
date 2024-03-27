@@ -6,12 +6,11 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 
 public class RestCalls {
     public static void start() throws Exception {
         final HttpClient httpClient = HttpClient.newHttpClient();
-        final Gson gson = new Gson();
+        Gson gson = new Gson();
 
         final HttpRequest getRequest =
                 HttpRequest.newBuilder().
@@ -21,5 +20,11 @@ public class RestCalls {
         final HttpResponse<String> getResponse = httpClient.send(getRequest, HttpResponse.BodyHandlers.ofString());
         final String responseBody = getResponse.body();
         System.out.println(responseBody);
+
+        // from a string in json format
+        ExchangeRateResponse exchangeResponse = gson.fromJson(responseBody, ExchangeRateResponse.class);
+        System.out.println(exchangeResponse.getUsdBRL().getHigh());
+        // exchangeResponse.returns();
+
     }
 }
