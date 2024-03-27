@@ -11,11 +11,12 @@ public class Main {
         // Records.Start();
         // FAnnotations.Start();
         // Enumerations.Start();
-        try {
-            RestCalls.start();
-        } catch(Exception error) {
-            System.out.println(error.getMessage());
-        }
+        // try {
+        //     RestCalls.start();
+        // } catch(Exception error) {
+        //     System.out.println(error.getMessage());
+        // }
+        Hashmaps.start();
     }
 
     public static void test(String message) {
